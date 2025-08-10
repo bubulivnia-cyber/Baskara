@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Selamat Ulang Tahun Baskara!</title>
+  <style>
+    body{margin:0;font-family:system-ui;background:#0f172a;color:#fff;display:flex;align-items:center;justify-content:center;min-height:100vh;padding:20px}
+    .card{max-width:600px;background:rgba(255,255,255,0.05);padding:20px;border-radius:16px;text-align:center;box-shadow:0 8px 20px rgba(0,0,0,0.4)}
+    img{max-width:200px;border-radius:12px;margin-bottom:16px}
+    h1{margin:0;font-size:28px}
+    p{margin:8px 0;font-size:16px;line-height:1.4}
+    button{margin-top:16px;padding:10px 16px;border:none;border-radius:8px;background:#ff6b6b;color:#fff;font-weight:bold;cursor:pointer}
+    .hidden{display:none}
+  </style>
+</head>
+<body>
+  <div class="card">
+    <img src="Untitled613_20250809213846.PNG" alt="Bulan dan Baskara">
+    <h1>Selamat Ulang Tahun, Baskara! 🎉</h1>
+    <p>Dari Bulan 💛</p>
+    <button onclick="revealMessage()">Buka Pesan Spesial</button>
+    <div id="message" class="hidden">
+      <p>Baskara sayang, selamat ulang tahun ya! Aku bersyukur banget bisa kenal dan jalan bareng kamu.</p>
+      <p>Semoga hari-hari kamu ke depan selalu dikasih sehat, rezeki lancar, banyak tawa, dan orang-orang baik di sekeliling kamu. Semoga semua mimpi dan rencana kamu tercapai satu per satu, dan semoga kamu nggak pernah ngerasa sendirian karena aku selalu ada di sini.</p>
+      <p>Aku sayang banget sama kamu — dari Bulan yang selalu kangen. 💛</p>
+    </div>
+    <audio id="bgMusic" src="terbuang_dalam_waktu_interlude.mp3"></audio>
+  </div>
+  <script>
+    function revealMessage(){
+      document.getElementById('message').classList.remove('hidden');
+      document.getElementById('bgMusic').play();
+    }
+  </script>
+</body>
+</html>
